@@ -135,7 +135,6 @@ class nfs::params {
     'RedHat': {
       case $::operatingsystem {
         'Fedora': {
-          default: {
               $client_idmapd_setting      = ['']
               $client_nfs_options         = 'tcp,nolock,rsize=32768,wsize=32768,intr,noatime,actimeo=3'
               $client_services_enable     = false
@@ -145,7 +144,6 @@ class nfs::params {
               $client_nfsv4_services      = {'rpcbind.service' => {}}
               $server_nfsv4_servicehelper = 'nfs-idmap.service'
               $server_service_name        = 'nfs-server.service'
-            }
         }
         'CentOS|RedHat': {
           case $::operatingsystemmajrelease {
