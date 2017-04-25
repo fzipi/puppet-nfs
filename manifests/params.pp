@@ -145,7 +145,7 @@ class nfs::params {
               $server_nfsv4_servicehelper = 'nfs-idmap.service'
               $server_service_name        = 'nfs-server.service'
         }
-        'CentOS|RedHat': {
+        'CentOS', 'RedHat': {
           case $::operatingsystemmajrelease {
             '7': {
               $client_idmapd_setting      = ['']
