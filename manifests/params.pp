@@ -49,7 +49,7 @@ class nfs::params {
     'RedHat': {
       $exports_file     = '/etc/exports'
       $idmapd_file      = '/etc/idmapd.conf'
-      $defaults_file    = '/etc/default/nfs-common'
+      $defaults_file    = '/etc/sysconfig/nfs'
       $server_packages  = [ 'nfs-utils', 'nfs4-acl-tools', 'rpcbind' ]
       $client_packages  = [ 'nfs-utils', 'nfs4-acl-tools', 'rpcbind' ]
     }
