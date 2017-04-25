@@ -171,6 +171,7 @@ class nfs::params {
             }
           }
         }
+      }
     }
     'Gentoo': {
       $client_idmapd_setting      = ['set NFS_NEEDED_SERVICES rpc.idmapd']
